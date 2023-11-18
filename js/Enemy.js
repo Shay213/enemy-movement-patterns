@@ -4,11 +4,12 @@ export default class Enemy{
     this.y = Math.random() * canvasHeight
     this.width = 50
     this.height = 50
+    this.speed = Math.random() * 4 - 2
   }
 
   update(){
-    this.x++
-    this.y++
+    this.x += this.speed
+    this.y += this.speed
   }
 
   draw(ctx){
