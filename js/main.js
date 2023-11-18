@@ -1,4 +1,4 @@
-import Enemy from './Enemy.js'
+import Bat from './Bat.js'
 
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d')
@@ -6,12 +6,10 @@ const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 1000
 const CANVAS_HEIGHT = canvas.height = 700
 
-let numOfEnemies = 20
-
 const enemies = []
 
-for(let i = 0; i < numOfEnemies; i++){
-  enemies.push(new Enemy(CANVAS_WIDTH, CANVAS_HEIGHT))
+for(let i = 0; i < 10; i++){
+  enemies.push(new Bat(CANVAS_WIDTH, CANVAS_HEIGHT))
 }
 
 function animate(){
